@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Add Fridge</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/comm-fridge.css" />
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+    <section id = "fridgesection">
+      <br><br><br><br>
+      <h1>Add Fridge</h1>
+      <label for="fridgeName">Fridge Name:</label>
+      <input type="text" id="fridgeName" name="fridgeName"><br><br>
+      <label for="numItemsAccepted">Number of Items Accepted:</label>
+      <input type="number" id="numItemsAccepted" name="numItemsAccepted"><br>
+      <label for="accepted_types">Accepted Types:</label>
+      <select name="accepted_types" id="accepted_types" multiple>
+       <option value="Dairy">Dairy</option>
+       <option value="Produce">Produce</option>
+       <option value="Pantry">Pantry</option>
+       <option value="Frozen">Frozen</option>
+      </select><br>
+      <label for="contact_person">Contact Person:</label>
+      <input type="text" id="contact_person" name="contact_person"><br><br>
+      <label for="contact_phone">Contact Phone:</label>
+      <input type="text" id="contact_phone" name="contact_phone"><br><br>
+      <label for="streetName">Street Name:</label>
+      <input type="text" id="streetName" name="streetName"><br><br>
+      <label for="postal_code">Postal Code:</label>
+      <input type="text" id="postal_code" name="postal_code"><br><br>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city"><br><br>
+      <label for="province">Province:</label>
+      <input type="text" id="province" name="province"><br><br>
+      <form action="http://localhost:8000/fridges" method="post" id="myForm">
+        <input type="submit" id="postButton" value="Submit" /> <br><br>
+      </form>
+    </section>
+</body>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</html>
